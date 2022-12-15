@@ -6,6 +6,11 @@ https://templatemo.com/tm-504-page-one
 
 */
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 body {
 	font-size: 21px;	
 	overflow-x: hidden;

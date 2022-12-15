@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wehre....</title>
+        <meta charset="UTF-8"/>
+        <style>
+            p {
+                color: #921ba4;
+                font-family: Impact, sans-serif;
+                font-size: 48px;
+                margin: 4px;
+            }
+            
+            body {
+                background-color: #dddddd;
+            }
+
+            .fixed-to-left {
+                position: fixed;
+                top: 50vh;
+                left: 0vw;
+            }
+            
+            .fixed-to-right {
+                position: fixed;
+                top: 50vh;
+                right: 0vw;
+            }
+            
+            .funny-cat-wrapper {
+                position: fixed;
+                top: 50vh;
+                left: 50vw;
+                bottom: 50vh;
+                right: 50vw;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid #921ba4
+            }
+            
+            .funny-cat {
+                position: relative;
+                
+                height: 800px;
+                width: 800px;
+                max-height: 90vh;
+                max-width: 90vw;
+                width: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="fixed-to-left">le epic</p>
+        <div class="funny-cat-wrapper">
+            <img class="funny-cat" src="/img/neco3d.png" alt="lol no funny cat" onclick="document.getElementById('nya').play();">
+        </div>
+        <p class="fixed-to-right">404 fail</p>
+    </body>
+
+    <audio id="nya">
+        <source src="/audio/nya.wav">
+    </audio>
+</html>
